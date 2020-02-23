@@ -1,0 +1,1188 @@
+/* Generated on: Fri Feb 21 2020 22:07:41 GMT+0000 (Coordinated Universal Time) */
+/* ==========================================================================
+   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
+   ========================================================================== */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:none}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* ==========================================================================
+   Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
+   ========================================================================== */
+
+   /* ==========================================================================
+      Start of custom Webflow CSS
+      ========================================================================== */
+   .w-layout-grid {
+     display: -ms-grid;
+     display: grid;
+     grid-auto-columns: 1fr;
+     -ms-grid-columns: 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
+     -ms-grid-rows: auto auto;
+     grid-template-rows: auto auto;
+     grid-row-gap: 16px;
+     grid-column-gap: 16px;
+   }
+   
+   .pagecontainer {
+     width: 100vw;
+     max-width: 90em;
+     margin-right: auto;
+     margin-left: auto;
+   }
+   
+   .body {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+     color: #003;
+     font-size: 1em;
+     line-height: 144%;
+     font-weight: 300;
+     letter-spacing: 0.02em;
+   }
+   
+   .navbar {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0px;
+     z-index: 4;
+     background-color: #fff;
+   }
+   
+   .topnavlink {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     height: 2.5em;
+     margin-right: 0.25em;
+     margin-left: 0.25em;
+     padding: 0px 1em;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-radius: 0.25em;
+     color: #003;
+     font-size: 0.8em;
+     font-weight: 400;
+     text-decoration: none;
+   }
+   
+   .topnavlink:hover {
+     background-color: #f2f2ff;
+   }
+   
+   .topnavlink.main {
+     background-color: #39388b;
+     color: #f2f2ff;
+   }
+   
+   .topnavlink.main:hover {
+     background-color: #003;
+   }
+   
+   .topnavcontainer {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     height: 3em;
+     padding-right: 2.5%;
+     padding-left: 2.5%;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     letter-spacing: 0.04em;
+   }
+   
+   .locationsfilter {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 3em;
+     z-index: 5;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 1em 2.5% 1.5em;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+     background-color: #f2f2ff;
+     letter-spacing: 0.04em;
+   }
+   
+   .divhorizontaljustifyleft {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .divverticalalignleft {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-align: start;
+     -webkit-align-items: flex-start;
+     -ms-flex-align: start;
+     align-items: flex-start;
+   }
+   
+   .labelmicro {
+     opacity: 1;
+     color: #000;
+     font-size: 0.7em;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+   }
+   
+   .dropdown {
+     margin-right: 1em;
+     margin-left: 0px;
+   }
+   
+   .locationdropdowntoggle {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     width: 12em;
+     height: 3em;
+     padding: 0px 0.75em;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #fff;
+     border-radius: 0.25em;
+     background-color: #fff;
+     font-size: 0.9em;
+   }
+   
+   .locationdropdowntoggle:hover {
+     border-color: #6578e5;
+   }
+   
+   .multiselectpill {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     height: 3em;
+     padding-right: 0.75em;
+     padding-left: 0.75em;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     background-color: #fff;
+     font-size: 0.9em;
+   }
+   
+   .multiselectpill:hover {
+     background-color: #d9dbff;
+   }
+   
+   .locationdropdownlist {
+     background-color: #fff;
+   }
+   
+   .locationdropdownlist.w--open {
+     overflow: hidden;
+     width: 12em;
+     margin-top: 0.5em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #6578e5;
+     border-radius: 0.25em;
+     background-color: #fff;
+     font-size: 0.9em;
+   }
+   
+   .dropdownlink:hover {
+     background-color: #d9dbff;
+   }
+   
+   ._1emgapbehind {
+     margin-right: 1em;
+   }
+   
+   .checkbox {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     width: 1.5em;
+     height: 1.5em;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #b2b2f8;
+     border-radius: 0.25em;
+     background-color: #fff;
+   }
+   
+   .checkbox.selected {
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-style: solid;
+     border-color: #6578e5;
+     background-color: #6578e5;
+   }
+   
+   .invert {
+     -webkit-filter: invert(100%);
+     filter: invert(100%);
+   }
+   
+   ._0p5emgapbehind {
+     margin-right: 0.5em;
+   }
+   
+   .pillselectblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     overflow: hidden;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-radius: 0.25em;
+   }
+   
+   .pillselectseparatorline {
+     width: 1px;
+     height: 2.75em;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: row;
+     -ms-flex-direction: row;
+     flex-direction: row;
+     -webkit-box-align: stretch;
+     -webkit-align-items: stretch;
+     -ms-flex-align: stretch;
+     align-items: stretch;
+     background-color: #d9dbff;
+   }
+   
+   .buttonmain {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     height: 3em;
+     padding-right: 0.75em;
+     padding-left: 0.75em;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-radius: 0.25em;
+     background-color: #2b368d;
+     color: #f2f2ff;
+     font-size: 0.9em;
+     font-weight: 400;
+   }
+   
+   .buttonmain:hover {
+     background-color: #003;
+   }
+   
+   .buttonmain.added {
+     border-style: solid;
+     border-width: 2px;
+     border-color: #6578e5;
+     background-color: transparent;
+     color: #6578e5;
+   }
+   
+   .section {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 1em 2.5% 0.5em;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+   }
+   
+   .apartmentcardsblock {
+     width: 20em;
+     margin-right: 1em;
+   }
+   
+   .div-block {
+     -webkit-box-flex: 1;
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+   }
+   
+   .tabs {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-flex: 1;
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+   }
+   
+   .apartmentlistings {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     overflow: scroll;
+     width: 20em;
+     height: 75vh;
+     padding-right: 1em;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     border-radius: 0.5em;
+   }
+   
+   .apartmenttab {
+     margin-bottom: 0.5em;
+     padding: 1em;
+     border-bottom: 1px solid #e8e8ff;
+     background-color: #fff;
+   }
+   
+   .apartmenttab:hover {
+     border-radius: 0.5em;
+     background-color: #f2f2ff;
+   }
+   
+   .apartmenttab.w--current {
+     border-radius: 0.5em;
+     background-color: #e8e8ff;
+   }
+   
+   .apartmenttab.current {
+     border-radius: 0.5em;
+     background-color: #e8e8ff;
+   }
+   
+   ._1emgapbelow {
+     margin-bottom: 1em;
+   }
+   
+   .headertertiary {
+     font-weight: 500;
+   }
+   
+   .headertertiary.crossedout {
+     opacity: 0.6;
+     text-decoration: line-through;
+   }
+   
+   .texttertiary {
+     opacity: 0.7;
+     font-size: 0.8em;
+   }
+   
+   ._0p25emgapbehind {
+     margin-right: 0.25em;
+   }
+   
+   .divhorizontalspacebtw {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .divhorizontalspacebtw._2emgapbelow {
+     margin-bottom: 2em;
+   }
+   
+   .textsmallest {
+     opacity: 1;
+     color: #000;
+     font-size: 0.7em;
+     font-weight: 400;
+     text-transform: none;
+   }
+   
+   .textsmallest.crossout {
+     opacity: 0.6;
+     text-decoration: line-through;
+   }
+   
+   .divhorizontalalignendjustspacebtw {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+   }
+   
+   .divverticalalignright {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+   }
+   
+   .headersecondary {
+     color: #003;
+     font-size: 1.125em;
+     font-weight: 500;
+   }
+   
+   .headersecondary.prune {
+     color: #6578e5;
+   }
+   
+   .divhorizontaljustifyright {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: end;
+     -webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+   }
+   
+   ._0p5emgapbelow {
+     margin-bottom: 0.5em;
+   }
+   
+   .apartmenttabicons {
+     margin-bottom: 1em;
+     grid-column-gap: 0px;
+     grid-row-gap: 0px;
+     -ms-grid-columns: 8em 1fr;
+     grid-template-columns: 8em 1fr;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+   }
+   
+   .slide-nav {
+     display: none;
+   }
+   
+   .image {
+     width: 41em;
+     height: 24em;
+   }
+   
+   .slider {
+     height: 24em;
+     background-color: transparent;
+   }
+   
+   .mask {
+     border-top-left-radius: 0.5em;
+     border-top-right-radius: 0.5em;
+   }
+   
+   .apartmentlistingsection {
+     padding-right: 2.5%;
+     padding-left: 2.5%;
+   }
+   
+   .apartmentinfoheader {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     margin-bottom: 0.5em;
+     padding: 1em;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: row;
+     -ms-flex-direction: row;
+     flex-direction: row;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-flex: 1;
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+     border-bottom-left-radius: 0.5em;
+     border-bottom-right-radius: 0.5em;
+     background-color: #f2f2ff;
+   }
+   
+   .textsecondary {
+     opacity: 0.7;
+     font-size: 0.9em;
+   }
+   
+   .textsecondary.weight500 {
+     font-weight: 500;
+   }
+   
+   .div-block-3 {
+     overflow: scroll;
+   }
+   
+   .nav-menu-2 {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .filtersmainblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .filtersinnerblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+   }
+   
+   .brand {
+     padding-left: 0px;
+   }
+   
+   .listingsmainblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: stretch;
+     -webkit-align-items: stretch;
+     -ms-flex-align: stretch;
+     align-items: stretch;
+   }
+   
+   .apartmentinfoblock {
+     overflow-y: scroll;
+     width: 41em;
+     height: 75vh;
+     margin-left: 1em;
+     border-radius: 0.5em;
+   }
+   
+   .unitslistingswrappermain {
+     width: 64em;
+     margin-right: auto;
+     margin-left: auto;
+     padding-right: 1em;
+     padding-left: 1em;
+   }
+   
+   .apartmenttabiconswider {
+     margin-bottom: 1em;
+     grid-column-gap: 0.5em;
+     grid-row-gap: 0.5em;
+     -ms-grid-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+   }
+   
+   .redwarningtext {
+     padding-right: 0.5em;
+     padding-left: 0.5em;
+     border-radius: 0.25em;
+     background-color: #ff8050;
+     opacity: 0.8;
+     color: #fff;
+     font-size: 0.8em;
+     font-weight: 500;
+   }
+   
+   .headerprimary {
+     font-size: 1.25em;
+     font-weight: 500;
+   }
+   
+   .headerprimary.prune {
+     color: #6578e5;
+   }
+   
+   .apartmentinfocontent {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 1em 1em 4em;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+   }
+   
+   .iconinsidebutton {
+     margin-right: 0.5em;
+     margin-left: -0.25em;
+   }
+   
+   ._1emgapbelow-copy {
+     margin-bottom: 1em;
+     border-bottom: 1px solid #d9dbff;
+   }
+   
+   .grid {
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+   }
+   
+   .infogrid2col {
+     margin-top: 0.5em;
+     grid-column-gap: 0px;
+     grid-row-gap: 0px;
+     -ms-grid-columns: 7em 1fr;
+     grid-template-columns: 7em 1fr;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+   }
+   
+   ._2emgapbelow {
+     margin-bottom: 2em;
+   }
+   
+   .goldqualification {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     height: 2em;
+     padding-right: 0.5em;
+     padding-left: 0.5em;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-style: solid;
+     border-width: 2px;
+     border-color: #39388b;
+     border-radius: 0.25em;
+     opacity: 1;
+     color: #003;
+     font-size: 0.7em;
+     font-weight: 500;
+   }
+   
+   .qualificationsdropdownlist {
+     background-color: #fff;
+   }
+   
+   .qualificationsdropdownlist.w--open {
+     overflow: hidden;
+     width: 16em;
+     margin-top: 0.5em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #6578e5;
+     border-radius: 0.25em;
+     background-color: #fff;
+     font-size: 0.9em;
+   }
+   
+   .apartmentinfoctarepeat {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     margin-bottom: 2em;
+     padding: 1em;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     border-radius: 0.25em;
+     background-color: #f2f2ff;
+   }
+   
+   .map {
+     margin-bottom: 1em;
+     border-radius: 0.5em;
+   }
+   
+   .apartmentlistingbottomnav {
+     display: none;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-top: 2px solid #6578e5;
+     background-color: #fff;
+   }
+   
+   .apartmentlistingbottomnavlink {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 0.5em 1em;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -webkit-box-flex: 1;
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+   }
+   
+   .resultsshownblock {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 9.5em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+     background-color: #fff;
+   }
+   
+   .apartmentinfoheadername {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: start;
+     -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .apartmentinfopriceblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     margin-bottom: 2em;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+   }
+   
+   .apartmentinfopriceblock._2emgapbelow {
+     margin-bottom: 2em;
+   }
+   
+   .grid-2 {
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     justify-items: baseline;
+     -ms-grid-rows: auto;
+     grid-template-rows: auto;
+   }
+   
+   .hurryupblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+   }
+   
+   .apartmentinforpriceblockhurry {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     max-width: 11em;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+     text-align: right;
+   }
+   
+   .hurryupsmallblock {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: end;
+     -webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     -webkit-box-align: end;
+     -webkit-align-items: flex-end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+   }
+   
+   @media screen and (max-width: 991px) {
+     .locationsfilter {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .tabs {
+       -webkit-box-pack: start;
+       -webkit-justify-content: flex-start;
+       -ms-flex-pack: start;
+       justify-content: flex-start;
+     }
+     .apartmentlistings {
+       display: none;
+       width: 0em;
+       padding-right: 0em;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .image {
+       width: 100vw;
+     }
+     .mask {
+       width: 100vw;
+       border-top-left-radius: 0em;
+       border-top-right-radius: 0em;
+     }
+     .apartmentlistingsection {
+       padding-right: 0%;
+       padding-left: 0%;
+     }
+     .apartmentinfoheader {
+       border-bottom-left-radius: 0em;
+       border-bottom-right-radius: 0em;
+     }
+     .filtersmainblock {
+       margin-bottom: 1em;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .filtersinnerblock {
+       margin-bottom: 0.5em;
+     }
+     .apartmentinfoblock {
+       overflow: visible;
+       width: 100vw;
+       height: auto;
+       margin-left: 0em;
+     }
+     .unitslistingswrappermain {
+       width: 100vw;
+       padding-right: 0em;
+       padding-left: 0em;
+     }
+     .apartmentinfocontent {
+       width: 90vw;
+       margin-right: auto;
+       margin-left: auto;
+     }
+     .apartmentlistingbottomnav {
+       position: fixed;
+       left: 0%;
+       top: auto;
+       right: 0%;
+       bottom: 0%;
+       z-index: 6;
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+     }
+     .resultsshownblock {
+       display: none;
+     }
+   }
+   
+   @media screen and (max-width: 767px) {
+     .image {
+       height: 16em;
+     }
+     .slider {
+       height: 16em;
+     }
+     .apartmenttabiconswider {
+       -ms-grid-columns: 1fr 1fr;
+       grid-template-columns: 1fr 1fr;
+     }
+     .apartmentinfoctarepeat {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .apartmentinfoheadername {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: reverse;
+       -webkit-flex-direction: column-reverse;
+       -ms-flex-direction: column-reverse;
+       flex-direction: column-reverse;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+   }
+   
+   @media screen and (max-width: 479px) {
+     .topnavcontainer {
+       padding-right: 5%;
+       padding-left: 5%;
+     }
+     .locationsfilter {
+       display: none;
+       padding-right: 5%;
+       padding-left: 5%;
+     }
+     .locationdropdowntoggle {
+       margin-bottom: 0.5em;
+     }
+     .pillselectblock {
+       margin-bottom: 0.5em;
+     }
+     .image {
+       height: 12em;
+     }
+     .slider {
+       height: 12em;
+     }
+     .apartmentinfoheader {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .filtersinnerblock {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+     }
+     .apartmenttabiconswider {
+       -ms-grid-columns: 1fr;
+       grid-template-columns: 1fr;
+     }
+     .grid {
+       -ms-grid-columns: 1fr;
+       grid-template-columns: 1fr;
+     }
+     .apartmentinfopriceblock {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .apartmentinforpriceblockhurry {
+       margin-top: 2em;
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .hurryupsmallblock {
+       -webkit-box-align: start;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+     }
+     .apartmentinfoheadermain {
+       margin-bottom: 1em;
+     }
+   }
+   
+   #w-node-cd04b5e6f384-5a6bf42a {
+     -ms-grid-column-align: end;
+     justify-self: end;
+   }
+   
+   #w-node-804fef960c62-5a6bf42a {
+     -ms-grid-column-align: end;
+     justify-self: end;
+   }
+   
+   #w-node-bb0896c55c39-5a6bf42a {
+     -ms-grid-column-align: end;
+     justify-self: end;
+   }

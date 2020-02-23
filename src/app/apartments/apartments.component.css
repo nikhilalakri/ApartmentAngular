@@ -1,0 +1,16 @@
+.bg{
+    overflow-y: scroll;
+    height: 601px;
+}
+
+.apartmentinfoblock {
+    overflow-y: scroll;
+    width: 49em;
+    height: 601px;
+    margin-left: 1em;
+    border-radius: 0.5em;
+}
+
+.carousel-item img{
+    height:500px
+}

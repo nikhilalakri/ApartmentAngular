@@ -1,0 +1,242 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 bg">          
+        <div *ngFor="let flat of apartments.data" class="apartmenttab w-inline-block w-tab-link">
+            <a  (click)="getApartmnet(flat)" >
+                <div class="divhorizontaljustifyleft _0p5emgapbelow">
+                  <div class="headertertiary _0p5emgapbehind">
+                    {{flat.tertiary}}
+                  </div>
+                  <div *ngIf="flat.gold" class="goldqualification">GOLD</div>
+                </div>
+                <div class="w-layout-grid apartmenttabicons">
+                  <div *ngFor="let apartment of flat.apartmenttab" class="divhorizontaljustifyleft _1emgapbehind">
+                    <img
+                      src="{{apartment.image}}"
+                      alt="" class="_0p25emgapbehind">
+                    <div class="texttertiary">{{apartment.title}}</div>
+                  </div>
+                </div>
+                <div class="divhorizontaljustifyright">
+                  <div class="_1emgapbehind">
+                    <div class="textsmallest crossout">Rs. {{flat.mrp}}</div>
+                  </div>
+                  <div class="headersecondary prune">Rs. {{flat.sellingPrice}}</div>
+                </div>
+              </a>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="apartmentinfoblock">
+          <!-- <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
+            <div class="mask w-slider-mask">
+              <div class="w-slide" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;">
+                <img
+                  src="assets/images/{{description.description.images[0]}}"
+                  sizes="(max-width: 991px) 100vw, 656px" alt="" class="image">
+                </div>
+              <div class="w-slide"
+                style="transform: translateX(-1278px); opacity: 1; transition: transform 500ms ease 0s;"><img
+                    src="assets/images/{{description.description.images[1]}}"
+                  sizes="(max-width: 991px) 100vw, 656px" alt="" class="image"></div>
+            </div>
+            <div class="w-slider-arrow-left">
+              <div class="w-icon-slider-left"></div>
+            </div>
+            <div class="w-slider-arrow-right">
+              <div class="w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav w-slider-nav w-round">
+              <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+              <div class="w-slider-dot" data-wf-ignore=""></div>
+            </div>
+          </div> -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/{{description.description.images[0]}}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/{{description.description.images[1]}}" alt="Second slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="apartmentinfoheader">
+            <div class="apartmentinfoheadermain">
+              <div class="apartmentinfoheadername">
+                <div class="headertertiary _0p5emgapbehind">{{description.tertiary}}</div>
+                <div *ngIf="description.gold" class="goldqualification">GOLD</div>
+              </div>
+              <div class="textsecondary">Hiranandani Gardens, Powai</div>
+            </div>
+            <div>
+              <div class="buttonmain">
+                <div>Bid for this apartment</div>
+              </div>
+            </div>
+          </div>
+          <div class="apartmentinfocontent">
+            <div class="apartmentinfopriceblock">
+              <div class="divverticalalignleft">
+                <div class="_0p5emgapbelow">
+                  <div class="textsecondary">Market-rate rent:</div>
+                  <div class="headertertiary crossedout">Rs. {{description.mrp}}/month</div>
+                </div>
+                <div>
+                  <div class="textsecondary">Bidding starts at:</div>
+                  <div class="headerprimary prune">Rs. {{description.sellingPrice}}/month</div>
+                </div>
+              </div>
+              <div class="apartmentinforpriceblockhurry">
+                <div class="_0p5emgapbelow">
+                  <div class="textsecondary weight500"> {{description.description.unitsAvailable}} identical units available</div>
+                </div>
+                <div class="hurryupsmallblock">
+                  <div class="redwarningtext">Hurry up!</div>
+                  <div class="textsecondary">{{description.description.looking}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="_2emgapbelow">
+              <div class="_1emgapbelow-copy">
+                <div class="labelmicro"> LayoUt</div>
+              </div>
+              <div class="w-layout-grid grid">
+                <div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Floor Area</div>
+                    <div class="headersecondary prune">{{description.description.Layout.FloorArea}}</div>
+                  </div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Bedrooms</div>
+                    <div class="divhorizontaljustifyleft"><img
+                        src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4fcc7192480f5c9c58e09e_AptIconBedroomML.svg"
+                        alt="" class="_0p5emgapbehind">
+                      <div class="headersecondary prune">{{description.description.Layout.Bedrooms}}</div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Bathrooms</div>
+                    <div class="divhorizontaljustifyleft"><img
+                        src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4f3215d32e82aef999d9ef_AptBathroomML.svg"
+                        alt="" class="_0p5emgapbehind">
+                      <div class="headersecondary prune">{{description.description.Layout.Bathrooms}}</div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Balconies</div>
+                    <div class="divhorizontaljustifyleft"><img
+                        src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4f3215d32e82aef999d9ef_AptBathroomML.svg"
+                        alt="" class="_0p5emgapbehind">
+                      <div class="headersecondary prune">{{description.description.Layout.Balconies}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="w-node-cd04b5e6f384-5a6bf42a"><img
+                    src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4fcf36dcea4b95066b5bd6_LayoutSample.svg"
+                    height="160" alt=""></div>
+              </div>
+            </div>
+            <div class="_2emgapbelow">
+              <div class="_1emgapbelow-copy">
+                <div class="labelmicro">ELEVATION &amp; Orientation</div>
+              </div>
+              <div class="w-layout-grid grid">
+                <div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Elevation</div>
+                    <div class="divhorizontaljustifyleft">
+                      <div class="headersecondary prune">{{description.description.ElevationAndOrientation.Elevation}}</div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Total Floors</div>
+                    <div class="divhorizontaljustifyleft">
+                      <div class="headersecondary prune">{{description.description.ElevationAndOrientation.TotalFloors}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">View</div>
+                    <div class="divhorizontaljustifyleft">
+                      <div class="headersecondary prune">{{description.description.ElevationAndOrientation.view}}</div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid infogrid2col">
+                    <div class="texttertiary">Orientation</div>
+                    <div class="divhorizontaljustifyleft">
+                      <div class="headersecondary prune">{{description.description.ElevationAndOrientation.Orientation}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="_2emgapbelow">
+              <div class="_1emgapbelow-copy">
+                <div class="labelmicro">UNIT AMENITIES</div>
+              </div>
+              <div class="w-layout-grid apartmenttabiconswider">
+                <div *ngFor="let ameniti of description.description.UnitAmenities" class="divhorizontaljustifyleft _1emgapbehind"><img
+                    src="{{ameniti.image}}"
+                    alt="" class="_0p25emgapbehind">
+                  <div class="texttertiary">{{ameniti.title}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="_2emgapbelow">
+              <div class="_0p5emgapbelow">
+                <div class="headersecondary prune">{{description.description.paragraph.title}}</div>
+              </div>
+              <div class="textsecondary">{{description.description.paragraph.description}}</div>
+            </div>
+            <div class="_2emgapbelow">
+              <div class="_1emgapbelow-copy">
+                <div class="labelmicro">PROPERTY AMENITIES</div>
+              </div>
+              <div class="w-layout-grid apartmenttabiconswider">
+                <div *ngFor="let property of description.description.PropertyAmenities" class="divhorizontaljustifyleft _1emgapbehind"><img
+                    src="{{property.image}}"
+                    alt="" class="_0p25emgapbehind">
+                  <div class="texttertiary">{{property.title}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="apartmentinfoctarepeat">
+              <div>
+                <div class="headertertiary">Name your price and start bidding.</div>
+                <div class="textsecondary">Hurry up! Others are looking, too.</div>
+              </div>
+              <div class="buttonmain">
+                <div>Bid for this apartment</div>
+              </div>
+            </div>
+            <div class="apartmentlistingbottomnav">
+              <div class="apartmentlistingbottomnavlink">
+                <div class="_1emgapbehind"><img
+                    src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4fe18f9ea0c094786606f2_ArrowBack.svg"
+                    alt=""></div>
+                <div class="headersecondary prune">PREV</div>
+              </div>
+              <div class="apartmentlistingbottomnavlink">
+                <div class="_1emgapbehind">
+                  <div class="headersecondary prune">NEXT</div>
+                </div><img
+                  src="https://uploads-ssl.webflow.com/5e4eea4f69f88e24df6bf429/5e4fe183f15601a54dd1546a_ArrowFwd.svg"
+                  alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
