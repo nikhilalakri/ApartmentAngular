@@ -2,7 +2,7 @@
   "name": "multi-living-assignment",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "export NODE_OPTIONS=--openssl-legacy-provider && ng",
     "start": "ng serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "test": "ng test",
